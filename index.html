@@ -43,12 +43,11 @@
       padding: 24px 28px;
       margin-bottom: 20px;
     }
-    h2 {
-      font-size: 16px; font-weight: 700;
-      color: #a855f7; margin-bottom: 12px;
-    }
+    h2 { font-size: 16px; font-weight: 700; color: #a855f7; margin-bottom: 12px; }
     p { font-size: 14px; color: #ccccee; line-height: 1.8; margin-bottom: 10px; }
     p:last-child { margin-bottom: 0; }
+    ul { margin: 10px 0 10px 20px; }
+    ul li { font-size: 14px; color: #ccccee; line-height: 1.9; }
     .highlight {
       background: #7c3aed22; border-left: 3px solid #7c3aed;
       border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
@@ -56,6 +55,11 @@
     }
     .green-box {
       background: #05460a44; border-left: 3px solid #39d353;
+      border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
+      font-size: 14px; color: #eeeeff; line-height: 1.8;
+    }
+    .amber-box {
+      background: #f59e0b15; border-left: 3px solid #f59e0b;
       border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
       font-size: 14px; color: #eeeeff; line-height: 1.8;
     }
@@ -90,21 +94,33 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: March 7, 2026</div>
+    <div class="updated">Last updated: March 8, 2026</div>
 
     <div class="version-history">
       <strong>📋 Version History</strong>
       Version 1.0 — March 7, 2026 · Initial published policy<br>
       Version 1.1 — March 7, 2026 · Clarified permission usage and added user rights section<br>
-      Version 1.2 — March 7, 2026 · Added legal compliance statement and audit trail
+      Version 1.2 — March 7, 2026 · Added legal compliance statement and audit trail<br>
+      Version 2.0 — March 8, 2026 · Major update — added Search Automation, Bulk URL Automation, MX Validation, 7-language support, host permission justification and full feature coverage
     </div>
 
     <div class="card">
       <h2>📋 Overview</h2>
-      <p>MailHarvest Pro is a browser extension that extracts email addresses from webpages and PDF documents. We are fully committed to protecting your privacy.</p>
+      <p>MailHarvest Pro is a browser extension that extracts, validates and scores email addresses from webpages, PDF documents, search engine results and bulk URL lists. We are fully committed to protecting your privacy.</p>
       <div class="highlight">
         ✅ MailHarvest Pro does <strong>not</strong> collect, transmit, or store any personal data on external servers. All extracted data remains exclusively on your local device at all times.
       </div>
+      <p>The extension includes the following features, all of which operate entirely within your browser:</p>
+      <ul>
+        <li>Email extraction from any webpage, PDF or bulk URL list</li>
+        <li>MX record validation via Google DNS over HTTPS</li>
+        <li>Hot / Warm / Cold email scoring</li>
+        <li>Search automation across Google and Bing</li>
+        <li>Bulk URL automation (up to 1,000 URLs)</li>
+        <li>Session history and deduplication</li>
+        <li>7-language interface including Arabic RTL</li>
+        <li>Dark and light theme</li>
+      </ul>
     </div>
 
     <div class="card">
@@ -117,55 +133,91 @@
 
     <div class="card">
       <h2>💾 Data Storage</h2>
-      <p>All extracted email addresses are stored locally on your device using your browser's built-in local storage (chrome.storage.local). This data never leaves your browser and is never sent to any server, database, or third party.</p>
-      <p>You have full control over this data at all times and can clear it instantly using the "Clear" button inside the extension.</p>
+      <p>All extracted email addresses, settings, session history, saved keywords, saved URLs and user preferences are stored locally on your device using your browser's built-in local storage (chrome.storage.local).</p>
+      <p>This data never leaves your browser and is never sent to any server, database, or third party.</p>
+      <p>You have full control over this data at all times and can clear it instantly using the Clear button inside the extension.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔍 MX Record Validation</h2>
+      <p>MailHarvest Pro validates email addresses by checking whether the domain has real mail servers (MX records). This is done using Google's public DNS over HTTPS service at dns.google.</p>
+      <div class="amber-box">
+        ⚠️ <strong>Note:</strong> MX validation sends only the domain part of an email address (e.g. "gmail.com") to Google's public DNS API to check if valid mail servers exist. No full email addresses, no personal data, and no browsing information is ever sent. This is the same DNS lookup that any mail server performs when delivering email. Google's DNS service is subject to <a class="contact-link" href="https://developers.google.com/speed/public-dns/privacy" target="_blank">Google's own privacy policy</a>.
+      </div>
+      <p>DNS lookup results are cached locally within your browser session to avoid repeated lookups for the same domain. This cache is cleared when you close the browser.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔎 Search Automation</h2>
+      <p>The Search Automation feature opens Google and Bing search pages in browser tabs based on keywords you provide. This works exactly like you manually typing a search query into your browser.</p>
+      <ul>
+        <li>Search queries are formed from keywords you enter yourself</li>
+        <li>The extension opens search result pages in tabs and scans visible email addresses</li>
+        <li>No search queries, keywords or results are stored on any external server</li>
+        <li>Saved keywords are stored locally in your browser only</li>
+        <li>Country targeting simply appends a country name to your search query</li>
+      </ul>
+      <div class="green-box">
+        All search activity happens through your own browser and your own IP address — exactly as if you searched manually. MailHarvest Pro does not operate any proxy, relay or data collection server.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🤖 Bulk URL Automation</h2>
+      <p>The Bulk URL Automation feature opens URLs you provide in browser tabs and extracts email addresses from those pages.</p>
+      <ul>
+        <li>URL lists are entered by you and stored locally in your browser only</li>
+        <li>Pages are opened in your browser exactly as if you visited them manually</li>
+        <li>No URL lists or extracted data are transmitted to any external server</li>
+        <li>You can pause, resume or stop automation at any time</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔐 Permissions Explained</h2>
+      <p>MailHarvest Pro requests the following browser permissions. Each permission is used solely for its stated purpose and never for collecting third-party data:</p>
+      <div class="permission-row">
+        <span class="perm-name">storage</span>
+        <span>Saves extracted emails, settings, language preference, theme, session history, saved keywords and saved URLs locally on your device. No data is sent to any external server.</span>
+      </div>
+      <div class="permission-row">
+        <span class="perm-name">activeTab</span>
+        <span>Reads the content of the page you are currently viewing to find and extract email addresses. Not used to collect browsing history or personal data.</span>
+      </div>
+      <div class="permission-row">
+        <span class="perm-name">scripting</span>
+        <span>Runs the email extraction script on the active page when you trigger it. Not used to inject tracking or advertising code.</span>
+      </div>
+      <div class="permission-row">
+        <span class="perm-name">tabs</span>
+        <span>Opens and manages background tabs for bulk URL automation and search automation features. Not used to monitor browsing activity or collect tab history.</span>
+      </div>
+      <div class="permission-row">
+        <span class="perm-name">host permissions &lt;all_urls&gt;</span>
+        <span>Required so the content script can extract emails from any website the user chooses to scan. The script only activates when the user explicitly opens the extension — it never runs automatically, never collects data silently, and never transmits anything to external servers. This broad permission is essential because the extension must work on any website by design.</span>
+      </div>
     </div>
 
     <div class="card">
       <h2>👤 User Rights</h2>
-      <p>As a user of MailHarvest Pro, you have the following rights and controls at all times:</p>
       <div class="highlight">
-        🗑️ <strong>Right to Delete</strong> — You can clear all stored extraction data instantly at any time using the Clear button inside the extension.<br><br>
+        🗑️ <strong>Right to Delete</strong> — Clear all stored data instantly at any time using the Clear button inside the extension.<br><br>
         🔒 <strong>Right to Privacy</strong> — The extension does not share any information with third parties under any circumstances.<br><br>
         📴 <strong>Right to Disable</strong> — You can disable or uninstall the extension at any time, which removes all locally stored data.
       </div>
     </div>
 
     <div class="card">
-      <h2>🌐 Network Activity</h2>
-      <p>MailHarvest Pro does not make any network requests to external servers owned or operated by us. The extension operates entirely within your browser. The only network activity is the normal page loading you initiate yourself when browsing websites.</p>
+      <h2>👁️ No Tracking Policy</h2>
+      <p>We do not use analytics, tracking pixels, cookies, fingerprinting, or any form of user monitoring. We have no visibility into how you use the extension, what websites you visit, or what emails you extract.</p>
+      <div class="green-box">
+        ✅ No ads. No analytics. No telemetry. No data collection. Ever.
+      </div>
     </div>
 
     <div class="card">
       <h2>📄 PDF Processing</h2>
       <p>When extracting emails from PDF documents, all processing happens locally in your browser using an embedded PDF library (PDF.js by Mozilla). PDF contents are never uploaded or transmitted anywhere.</p>
-    </div>
-
-    <div class="card">
-      <h2>🔐 Permissions Explained</h2>
-      <p>MailHarvest Pro requests the following browser permissions. Each permission is used solely for its stated purpose and never for collecting third-party data:</p>
-
-      <div class="permission-row">
-        <span class="perm-name">storage</span>
-        <span>Used only to save extracted emails locally on your own device using the browser's built-in storage. No data is sent to any external server.</span>
-      </div>
-      <div class="permission-row">
-        <span class="perm-name">activeTab</span>
-        <span>Used only to read the content of the page you are currently viewing, solely to find and extract email addresses. This permission is not used to collect any browsing history or personal data.</span>
-      </div>
-      <div class="permission-row">
-        <span class="perm-name">scripting</span>
-        <span>Used only to run the email extraction script on the active page when you trigger it. It is not used to inject any tracking or advertising code.</span>
-      </div>
-      <div class="permission-row">
-        <span class="perm-name">tabs</span>
-        <span>Used only to manage automation when you provide a list of URLs to process in bulk. It is not used to monitor your browsing activity or collect tab history.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>👁️ No Tracking Policy</h2>
-      <p>We do not use analytics, tracking pixels, cookies, fingerprinting, or any form of user monitoring. We have no visibility into how you use the extension, what websites you visit, or what emails you extract.</p>
     </div>
 
     <div class="card">
@@ -176,11 +228,12 @@
     <div class="card">
       <h2>📬 Contact</h2>
       <p>If you have any questions about this privacy policy or the extension, please contact us at:<br><br>
-      <a class="contact-link" href="mailto:eneugajames@hotmail.com">eneugajames@hotmail.com</a></p>
+      <a class="contact-link" href="mailto:eneugajames@gmail.com">eneugajames@gmail.com</a></p>
     </div>
 
     <div class="footer">
-      © 2026 MailHarvest Pro · All rights reserved · Built with ❤️ for marketers worldwide
+      © 2026 MailHarvest Pro · All rights reserved<br>
+      <a class="contact-link" href="https://chapi212.github.io/mailharvest-pro">https://chapi212.github.io/mailharvest-pro</a>
     </div>
 
   </div>
