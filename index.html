@@ -76,7 +76,7 @@
     width: 36px;
     height: 36px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #c471ed, #f64f59, #f9a825);
+    object-fit: cover;
   }
 
   .nav-name {
@@ -185,13 +185,13 @@
 
   .hero h1 {
     font-family: 'Syne', sans-serif;
-    font-size: clamp(42px, 6vw, 80px);
+    font-size: clamp(32px, 4vw, 58px);
     font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -2px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
     margin-bottom: 24px;
     animation: fadeUp 0.6s 0.1s ease both;
-    max-width: 900px;
+    max-width: 780px;
   }
 
   .hero h1 .accent { color: var(--accent); }
@@ -724,7 +724,7 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-brand">
-    <div class="nav-logo"></div>
+    <img src="icon.jpeg" class="nav-logo" alt="MailHarvest Pro">
     <span class="nav-name">MailHarvest <span>Pro</span></span>
   </a>
   <ul class="nav-links">
