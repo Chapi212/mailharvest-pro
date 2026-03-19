@@ -1,240 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MailHarvest Pro — Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MailHarvest Pro</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0f0c29;
-      color: #eeeeff;
-      min-height: 100vh;
-      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f13;
+      color: #e2e8f0;
+      line-height: 1.7;
+      padding: 0 16px 80px;
     }
-    .container { max-width: 720px; margin: 0 auto; }
-    .header {
-      display: flex; align-items: center; gap: 14px;
-      margin-bottom: 40px; padding-bottom: 24px;
-      border-bottom: 1px solid #2e2a5a;
+    header {
+      text-align: center;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #1e1e2e;
+      margin-bottom: 48px;
     }
     .logo {
-      width: 48px; height: 48px;
-      background: linear-gradient(135deg, #7c3aed, #f59e0b);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 24px; flex-shrink: 0;
+      font-size: 22px;
+      font-weight: 700;
+      color: #a855f7;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
     }
-    .brand { font-size: 22px; font-weight: 800; color: #fff; }
-    .brand span { color: #f59e0b; }
-    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; color: #fff; }
-    .updated { font-size: 13px; color: #8888aa; margin-bottom: 10px; }
-    .version-history {
-      background: #1a1740; border: 1px solid #2e2a5a;
-      border-radius: 10px; padding: 14px 18px; margin-bottom: 30px;
-      font-size: 12px; color: #8888aa; line-height: 2;
+    .logo span { color: #e2e8f0; }
+    header p { font-size: 13px; color: #64748b; }
+    .container { max-width: 780px; margin: 0 auto; }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #f8fafc;
+      margin-bottom: 8px;
     }
-    .version-history strong { color: #a855f7; display: block; margin-bottom: 4px; font-size: 13px; }
-    .card {
-      background: #1a1740;
-      border: 1px solid #2e2a5a;
-      border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 20px;
+    .updated { font-size: 12px; color: #64748b; margin-bottom: 32px; }
+    .version-box {
+      background: #1e1e2e;
+      border: 1px solid #2d2d3f;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      font-size: 12px;
+      color: #94a3b8;
+      line-height: 1.8;
     }
-    h2 { font-size: 16px; font-weight: 700; color: #a855f7; margin-bottom: 12px; }
-    p { font-size: 14px; color: #ccccee; line-height: 1.8; margin-bottom: 10px; }
-    p:last-child { margin-bottom: 0; }
-    ul { margin: 10px 0 10px 20px; }
-    ul li { font-size: 14px; color: #ccccee; line-height: 1.9; }
+    .version-box strong { color: #a855f7; display: block; margin-bottom: 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin: 40px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon { font-size: 20px; }
+    p { color: #94a3b8; margin-bottom: 14px; font-size: 14px; }
+    ul { margin: 8px 0 16px 0; padding-left: 20px; }
+    li { color: #94a3b8; font-size: 14px; margin-bottom: 6px; }
     .highlight {
-      background: #7c3aed22; border-left: 3px solid #7c3aed;
-      border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
-      font-size: 14px; color: #eeeeff; line-height: 1.8;
+      background: #1a1a2e;
+      border-left: 3px solid #a855f7;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #c4b5fd;
     }
-    .green-box {
-      background: #05460a44; border-left: 3px solid #39d353;
-      border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
-      font-size: 14px; color: #eeeeff; line-height: 1.8;
+    .highlight strong { color: #f1f5f9; }
+    .warning {
+      background: #1c1a10;
+      border-left: 3px solid #f59e0b;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 13px;
+      color: #fcd34d;
     }
-    .amber-box {
-      background: #f59e0b15; border-left: 3px solid #f59e0b;
-      border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 14px 0;
-      font-size: 14px; color: #eeeeff; line-height: 1.8;
-    }
-    .permission-row {
-      display: flex; gap: 10px; margin-bottom: 10px;
-      font-size: 13px; color: #ccccee; line-height: 1.6;
+    .perm-grid { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+    .perm-item {
+      background: #1e1e2e;
+      border: 1px solid #2d2d3f;
+      border-radius: 8px;
+      padding: 14px 16px;
     }
     .perm-name {
-      background: #7c3aed33; color: #a855f7;
-      border-radius: 6px; padding: 2px 10px;
-      font-weight: 700; font-size: 12px;
-      white-space: nowrap; align-self: flex-start; margin-top: 2px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: #a855f7;
+      font-weight: 700;
+      margin-bottom: 4px;
     }
-    .contact-link { color: #a855f7; text-decoration: none; }
-    .contact-link:hover { text-decoration: underline; }
-    .footer {
-      text-align: center; margin-top: 40px;
-      font-size: 12px; color: #8888aa;
-      padding-top: 24px; border-top: 1px solid #2e2a5a;
+    .perm-desc { font-size: 13px; color: #94a3b8; }
+    .third-party-item {
+      background: #1e1e2e;
+      border: 1px solid #2d2d3f;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
     }
+    .third-party-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 4px;
+    }
+    .third-party-desc { font-size: 13px; color: #94a3b8; }
+    .third-party-note { font-size: 12px; color: #64748b; margin-top: 4px; font-style: italic; }
+    .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+    @media (max-width: 540px) { .rights-grid { grid-template-columns: 1fr; } }
+    .right-item {
+      background: #1e1e2e;
+      border: 1px solid #2d2d3f;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .right-title { font-size: 13px; font-weight: 700; color: #a855f7; margin-bottom: 4px; }
+    .right-desc { font-size: 12px; color: #94a3b8; }
+    .no-track {
+      background: #0d1f17;
+      border: 1px solid #166534;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin: 16px 0;
+    }
+    .no-track p { color: #4ade80; font-weight: 600; font-size: 14px; margin: 0; }
+    a { color: #a855f7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid #1e1e2e;
+      font-size: 12px;
+      color: #475569;
+    }
+    footer a { color: #64748b; }
+    hr { border: none; border-top: 1px solid #1e1e2e; margin: 40px 0; }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">✉ MAILHARVEST <span>PRO</span></div>
+    <p>Browser Extension — Privacy Policy</p>
+  </header>
+
   <div class="container">
 
-    <div class="header">
-      <div class="logo">✉</div>
-      <div>
-        <div class="brand">MailHarvest <span>Pro</span></div>
-        <div style="font-size:13px;color:#8888aa;">Browser Extension — Privacy Policy</div>
-      </div>
-    </div>
-
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: March 8, 2026</div>
+    <p class="updated">Last updated: March 19, 2026 &nbsp;·&nbsp; Version 3.0</p>
 
-    <div class="version-history">
-      <strong>📋 Version History</strong>
+    <div class="version-box">
+      <strong>Version History</strong>
       Version 1.0 — March 7, 2026 · Initial published policy<br>
       Version 1.1 — March 7, 2026 · Clarified permission usage and added user rights section<br>
       Version 1.2 — March 7, 2026 · Added legal compliance statement and audit trail<br>
-      Version 2.0 — March 8, 2026 · Major update — added Search Automation, Bulk URL Automation, MX Validation, 7-language support, host permission justification and full feature coverage
+      Version 2.0 — March 8, 2026 · Major update — added Search Automation, Bulk URL Automation, MX Validation, 7-language support, host permission justification and full feature coverage<br>
+      Version 3.0 — March 19, 2026 · Full update — added Google Sheets integration, Cloudflare Worker license verification, wit.ai CAPTCHA audio solving, WHOIS/RDAP lookup, declarativeNetRequest, alarms, identity permission, CRM meta extraction, crawl depth system and freemail domain query system
     </div>
 
-    <div class="card">
-      <h2>📋 Overview</h2>
-      <p>MailHarvest Pro is a browser extension that extracts, validates and scores email addresses from webpages, PDF documents, search engine results and bulk URL lists. We are fully committed to protecting your privacy.</p>
-      <div class="highlight">
-        ✅ MailHarvest Pro does <strong>not</strong> collect, transmit, or store any personal data on external servers. All extracted data remains exclusively on your local device at all times.
+    <h2><span class="icon">📋</span> Overview</h2>
+    <p>MailHarvest Pro is a Chrome and Edge browser extension that extracts, validates, scores and exports email addresses from webpages, PDF documents, spreadsheets, Word documents, search engine results and bulk URL lists. We are fully committed to protecting your privacy.</p>
+    <p style="font-size:13px;color:#64748b;">This policy covers MailHarvest Pro extension version 4.5.15 and above.</p>
+
+    <div class="highlight">
+      <strong>Core principle:</strong> MailHarvest Pro does not collect, transmit, or store any personal data on our servers. All extracted email data remains exclusively on your local device at all times.
+    </div>
+
+    <p>The extension includes the following features, all of which operate entirely within your browser except where explicitly noted below:</p>
+    <ul>
+      <li>Email extraction from any webpage, PDF, CSV, XLSX, TXT or Word document</li>
+      <li>Cloaked email decoding — detects [at], [dot] and HTML entity obfuscation</li>
+      <li>CRM meta extraction — first name, last name, company and source URL from page context</li>
+      <li>MX record validation via Google DNS and Cloudflare DNS over HTTPS</li>
+      <li>Hot / Warm / Cold AI email scoring</li>
+      <li>AI predictive scoring using local pattern analysis</li>
+      <li>Search automation across Google, Bing, LinkedIn, GitHub and WHOIS/RDAP</li>
+      <li>Freemail domain queries — Gmail, Hotmail, Outlook, Yahoo, Live, iCloud, ProtonMail</li>
+      <li>Deep crawl — follows internal links up to 10 levels deep</li>
+      <li>Bulk URL automation — up to 1,000 URLs per session</li>
+      <li>CAPTCHA auto-solving via audio transcription using wit.ai (Meta)</li>
+      <li>Google Sheets autosave with OAuth authentication</li>
+      <li>WHOIS / RDAP domain lookup via ICANN's public RDAP protocol</li>
+      <li>License verification via Cloudflare Worker</li>
+      <li>Session history, deduplication and search state persistence</li>
+      <li>CRM-ready CSV export — HubSpot and Pipedrive compatible</li>
+      <li>7-language interface including Arabic RTL</li>
+      <li>Dark and light theme</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">⚖️</span> Legal Compliance</h2>
+    <p>This extension complies with applicable data protection and privacy laws including GDPR and CCPA where relevant. Since no user email data ever leaves your device to our servers, no personal data is processed, stored remotely, or shared with any third party by us. MailHarvest Pro operates entirely within your local browser environment.</p>
+    <p>Users are responsible for complying with CAN-SPAM, GDPR, CASL and any other applicable regulations when contacting email addresses extracted using this tool. We recommend only contacting publicly listed business email addresses for legitimate outreach purposes.</p>
+
+    <hr>
+
+    <h2><span class="icon">💾</span> Data Storage</h2>
+    <p>All extracted email addresses, AI scores, MX validation results, CRM metadata, settings, language preference, theme, session history, saved keywords, saved URLs, search state and user preferences are stored locally on your device using your browser's built-in local storage (<code>chrome.storage.local</code>).</p>
+    <p>This data never leaves your browser and is never sent to any server, database, or third party by us. You have full control over this data at all times and can clear it instantly using the Clear button inside the extension.</p>
+
+    <hr>
+
+    <h2><span class="icon">🔍</span> MX Record Validation</h2>
+    <p>MailHarvest Pro validates email addresses by checking whether the domain has real mail servers (MX records). This is done using two public DNS over HTTPS services: Google Public DNS at <code>dns.google</code> and Cloudflare DNS at <code>cloudflare-dns.com</code>.</p>
+    <div class="warning">
+      ⚠️ MX validation sends only the domain part of an email address (e.g. "gmail.com") to these public DNS APIs — never full email addresses, never personal data, never browsing information. This is the same DNS lookup any mail server performs when delivering email.
+    </div>
+    <p>DNS results are cached locally within your browser session to avoid repeated lookups for the same domain. Google's DNS service is subject to <a href="https://developers.google.com/speed/public-dns/privacy" target="_blank">Google's privacy policy</a>. Cloudflare's DNS service is subject to <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare's privacy policy</a>.</p>
+
+    <hr>
+
+    <h2><span class="icon">🔎</span> Search Automation</h2>
+    <p>The Search Automation feature opens Google and Bing search pages in browser tabs based on keywords you provide. This works exactly like you manually typing a search query into your browser.</p>
+    <ul>
+      <li>Search queries are formed from keywords, platforms and country filters you configure yourself</li>
+      <li>Freemail domain queries (Gmail, Hotmail, Outlook, Yahoo, Live, iCloud, ProtonMail) are added automatically to broaden results</li>
+      <li>The extension opens search result pages in background tabs and scans visible email addresses</li>
+      <li>No search queries, keywords or results are stored on any external server by us</li>
+      <li>Saved keywords are stored locally in your browser only</li>
+      <li>All search activity happens through your own browser and your own IP address — exactly as if you searched manually</li>
+    </ul>
+    <p>MailHarvest Pro does not operate any proxy, relay or data collection server. Search activity is indistinguishable from normal manual browsing.</p>
+
+    <hr>
+
+    <h2><span class="icon">🤖</span> CAPTCHA Auto-Solving</h2>
+    <p>When a reCAPTCHA challenge is detected during automated search, MailHarvest Pro attempts to solve it automatically using audio transcription. This feature uses the wit.ai speech recognition API operated by Meta Platforms, Inc.</p>
+    <div class="warning">
+      ⚠️ When CAPTCHA audio solving is active, the reCAPTCHA audio challenge MP3 file (a short audio clip of spoken words — not your voice, not any personal data) is sent from your browser to wit.ai's speech API for transcription. The request is made from your own IP address. The transcribed text is used solely to answer the CAPTCHA and is not stored by us.
+    </div>
+    <ul>
+      <li>Only the reCAPTCHA-generated audio challenge file is sent — never any personal data</li>
+      <li>Requests are made directly from your browser using your own IP address</li>
+      <li>We do not store, log or process the audio or the transcript</li>
+      <li>wit.ai's service is subject to <a href="https://wit.ai/privacy" target="_blank">Meta's / wit.ai's privacy policy</a></li>
+      <li>You can disable CAPTCHA auto-solving at any time in the Settings tab — the toggle is ON by default</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">📊</span> Google Sheets Integration</h2>
+    <p>MailHarvest Pro optionally integrates with Google Sheets to autosave extracted emails in real time. This feature requires Google OAuth authentication and is entirely optional — it is not enabled by default.</p>
+    <ul>
+      <li>When you connect Google Sheets, an OAuth access token is obtained via Chrome's identity API and stored locally in your browser</li>
+      <li>The token is used solely to write email data to the specific Google Sheet ID you provide</li>
+      <li>Extracted emails, scores, AI scores, domain and date are sent to the Google Sheets API and written to your personal sheet</li>
+      <li>We never see, store or have access to your Google account credentials, OAuth token or sheet data</li>
+      <li>Your sheet ID is stored locally in your browser only</li>
+      <li>Google Sheets API calls are subject to <a href="https://policies.google.com/privacy" target="_blank">Google's privacy policy</a></li>
+      <li>You can disconnect Google Sheets at any time in the Settings tab</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">🔑</span> License Verification</h2>
+    <p>MailHarvest Pro uses a Cloudflare Worker hosted at <code>mhp-verify.cohengroups.workers.dev</code> to verify license keys and manage trial eligibility. This is the only communication between the extension and our infrastructure.</p>
+    <ul>
+      <li>On first install, a one-way device fingerprint (SHA-256 hash of your extension ID and install timestamp — no personal data) is sent to the Worker to check trial eligibility and prevent abuse</li>
+      <li>When you activate a license key, the key and fingerprint are sent to the Worker for verification against Gumroad's license API</li>
+      <li>The Worker returns only a validity status, plan tier and expiry date — nothing else</li>
+      <li>We do not collect your name, email address, IP address or any personally identifiable information during license verification</li>
+      <li>A periodic 24-hour heartbeat alarm checks license validity silently in the background</li>
+      <li>All verification responses are stored locally in your browser only</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">🔍</span> WHOIS / RDAP Domain Lookup</h2>
+    <p>In domain search mode, MailHarvest Pro optionally performs a WHOIS lookup using ICANN's free public RDAP protocol at <code>rdap.org</code>. This lookup queries publicly available domain registration records.</p>
+    <ul>
+      <li>Only the domain name you enter is sent to the RDAP service — no personal data</li>
+      <li>Results are used solely to extract publicly listed registrant contact emails</li>
+      <li>RDAP results are processed locally and never stored on our servers</li>
+      <li>WHOIS lookup is optional and only fires when the WHOIS engine is selected in the Search tab</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">🤖</span> Bulk URL Automation</h2>
+    <p>The Bulk URL Automation feature opens URLs you provide in browser tabs and extracts email addresses from those pages.</p>
+    <ul>
+      <li>URL lists are entered by you and stored locally in your browser only</li>
+      <li>Pages are opened in your browser exactly as if you visited them manually</li>
+      <li>Downloadable files (PDF, CSV, XLSX, TXT, DOC) encountered during automation are processed locally</li>
+      <li>No URL lists or extracted data are transmitted to any external server by us</li>
+      <li>Search state (current position in queue) is saved locally so automation can resume after interruption — it expires after 45 minutes</li>
+      <li>You can pause, resume or stop automation at any time</li>
+    </ul>
+
+    <hr>
+
+    <h2><span class="icon">📄</span> PDF and Document Processing</h2>
+    <p>When extracting emails from PDF documents, all processing happens locally in your browser using an embedded PDF library (PDF.js by Mozilla). When extracting from CSV, XLSX, TXT or Word documents, all processing also happens entirely locally. No document contents are ever uploaded or transmitted to any server.</p>
+
+    <hr>
+
+    <h2><span class="icon">🧠</span> CRM Meta Extraction</h2>
+    <p>MailHarvest Pro attempts to enrich each extracted email address with contextual data (first name, last name, company name and source URL) by analysing the surrounding text on the page being scanned. This analysis happens entirely locally in your browser. No page content is transmitted to any external server for this purpose.</p>
+
+    <hr>
+
+    <h2><span class="icon">🔐</span> Permissions Explained</h2>
+    <p>MailHarvest Pro requests the following browser permissions. Each permission is used solely for its stated purpose:</p>
+
+    <div class="perm-grid">
+      <div class="perm-item">
+        <div class="perm-name">storage</div>
+        <div class="perm-desc">Saves extracted emails, AI scores, MX results, CRM metadata, settings, language preference, theme, session history, search state, saved keywords and license data locally on your device. No data is sent to any external server by us.</div>
       </div>
-      <p>The extension includes the following features, all of which operate entirely within your browser:</p>
-      <ul>
-        <li>Email extraction from any webpage, PDF or bulk URL list</li>
-        <li>MX record validation via Google DNS over HTTPS</li>
-        <li>Hot / Warm / Cold email scoring</li>
-        <li>Search automation across Google and Bing</li>
-        <li>Bulk URL automation (up to 1,000 URLs)</li>
-        <li>Session history and deduplication</li>
-        <li>7-language interface including Arabic RTL</li>
-        <li>Dark and light theme</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>⚖️ Legal Compliance</h2>
-      <p>This extension complies with applicable data protection and privacy laws including GDPR and CCPA where relevant.</p>
-      <div class="green-box">
-        Since no user data ever leaves your device, no personal data is processed, stored remotely, or shared with any third party. MailHarvest Pro operates entirely within your local browser environment.
+      <div class="perm-item">
+        <div class="perm-name">unlimitedStorage</div>
+        <div class="perm-desc">Allows the extension to store larger volumes of extracted email data locally without hitting Chrome's default storage quota. Used for Pro and Business plans handling high-volume extractions.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">activeTab</div>
+        <div class="perm-desc">Reads the content of the page you are currently viewing to find and extract email addresses. Not used to collect browsing history or personal data.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">scripting</div>
+        <div class="perm-desc">Runs the email extraction script on pages during automation and crawl. Also used to interact with reCAPTCHA elements during CAPTCHA handling. Not used to inject tracking or advertising code.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">tabs</div>
+        <div class="perm-desc">Opens and manages background tabs for bulk URL automation, search automation and crawl features. Monitors tab navigation to detect CAPTCHA pages and auto-resume after solving. Not used to monitor general browsing activity.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">identity</div>
+        <div class="perm-desc">Used exclusively to obtain a Google OAuth access token for the optional Google Sheets integration. Only requested when you click "Connect Google Sheets" in Settings. Not used for any other purpose.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">downloads</div>
+        <div class="perm-desc">Used to detect and intercept downloadable files (PDF, CSV, XLSX, DOC) that are triggered during automation so their contents can be scanned for email addresses instead of saved to disk.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">declarativeNetRequest</div>
+        <div class="perm-desc">Used to ensure Bing search results return 50 results per page (instead of the default 10) and to force English-language results during automated search. No browsing data is collected or intercepted.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">alarms</div>
+        <div class="perm-desc">Used to keep the background service worker alive during long automation runs, poll for CAPTCHA solving results from third-party APIs, and run the 24-hour license heartbeat check. No user data is involved.</div>
+      </div>
+      <div class="perm-item">
+        <div class="perm-name">host permissions &lt;all_urls&gt;</div>
+        <div class="perm-desc">Required so the content script can extract emails from any website the user chooses to scan, and so the background worker can fetch audio files and make DNS/API calls during automation. The script only activates when the user explicitly triggers it — it never runs automatically on pages you browse normally, never collects data silently, and never transmits anything to our servers. This broad permission is essential because the extension must work on any website by design.</div>
       </div>
     </div>
 
-    <div class="card">
-      <h2>💾 Data Storage</h2>
-      <p>All extracted email addresses, settings, session history, saved keywords, saved URLs and user preferences are stored locally on your device using your browser's built-in local storage (chrome.storage.local).</p>
-      <p>This data never leaves your browser and is never sent to any server, database, or third party.</p>
-      <p>You have full control over this data at all times and can clear it instantly using the Clear button inside the extension.</p>
+    <hr>
+
+    <h2><span class="icon">🌐</span> Third-Party Services</h2>
+    <p>The following third-party services receive limited data as described. We have no control over their privacy practices — please review their policies directly.</p>
+
+    <div class="third-party-item">
+      <div class="third-party-name">Google Public DNS — dns.google</div>
+      <div class="third-party-desc">Receives domain names only (e.g. "gmail.com") for MX record validation. No email addresses or personal data sent.</div>
+      <div class="third-party-note">Policy: <a href="https://developers.google.com/speed/public-dns/privacy" target="_blank">developers.google.com/speed/public-dns/privacy</a></div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">Cloudflare DNS — cloudflare-dns.com</div>
+      <div class="third-party-desc">Receives domain names only for MX record validation as a fallback to Google DNS. No email addresses or personal data sent.</div>
+      <div class="third-party-note">Policy: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">wit.ai (Meta Platforms, Inc.)</div>
+      <div class="third-party-desc">Receives the reCAPTCHA audio challenge MP3 file for speech-to-text transcription when CAPTCHA auto-solving is enabled. The audio is a computer-generated spoken word — not your voice. Requests are made from your own IP address. Only active when a CAPTCHA challenge occurs during automated search.</div>
+      <div class="third-party-note">Policy: <a href="https://wit.ai/privacy" target="_blank">wit.ai/privacy</a> — Can be disabled in Settings → Auto-solve: OFF</div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">Google Sheets API — sheets.googleapis.com</div>
+      <div class="third-party-desc">Receives extracted email addresses, scores and metadata to write to your personal Google Sheet. Only active when you have connected Google Sheets in Settings. Optional feature — disabled by default.</div>
+      <div class="third-party-note">Policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">Cloudflare Workers — mhp-verify.cohengroups.workers.dev</div>
+      <div class="third-party-desc">Receives a device fingerprint (non-reversible SHA-256 hash) and license key for verification. Returns plan status and expiry only. No personal data, email addresses or browsing data transmitted.</div>
+      <div class="third-party-note">Policy: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">Gumroad</div>
+      <div class="third-party-desc">License keys purchased via Gumroad are verified server-side through our Cloudflare Worker. We do not directly communicate with Gumroad from within the extension — verification is proxied through our Worker.</div>
+      <div class="third-party-note">Policy: <a href="https://gumroad.com/privacy" target="_blank">gumroad.com/privacy</a></div>
+    </div>
+    <div class="third-party-item">
+      <div class="third-party-name">ICANN RDAP — rdap.org</div>
+      <div class="third-party-desc">Receives the domain name you enter in domain search mode for WHOIS/RDAP lookup. Returns publicly available domain registration data. Only active when WHOIS engine is selected.</div>
+      <div class="third-party-note">ICANN public service — no account or key required</div>
     </div>
 
-    <div class="card">
-      <h2>🔍 MX Record Validation</h2>
-      <p>MailHarvest Pro validates email addresses by checking whether the domain has real mail servers (MX records). This is done using Google's public DNS over HTTPS service at dns.google.</p>
-      <div class="amber-box">
-        ⚠️ <strong>Note:</strong> MX validation sends only the domain part of an email address (e.g. "gmail.com") to Google's public DNS API to check if valid mail servers exist. No full email addresses, no personal data, and no browsing information is ever sent. This is the same DNS lookup that any mail server performs when delivering email. Google's DNS service is subject to <a class="contact-link" href="https://developers.google.com/speed/public-dns/privacy" target="_blank">Google's own privacy policy</a>.
-      </div>
-      <p>DNS lookup results are cached locally within your browser session to avoid repeated lookups for the same domain. This cache is cleared when you close the browser.</p>
-    </div>
+    <hr>
 
-    <div class="card">
-      <h2>🔎 Search Automation</h2>
-      <p>The Search Automation feature opens Google and Bing search pages in browser tabs based on keywords you provide. This works exactly like you manually typing a search query into your browser.</p>
-      <ul>
-        <li>Search queries are formed from keywords you enter yourself</li>
-        <li>The extension opens search result pages in tabs and scans visible email addresses</li>
-        <li>No search queries, keywords or results are stored on any external server</li>
-        <li>Saved keywords are stored locally in your browser only</li>
-        <li>Country targeting simply appends a country name to your search query</li>
-      </ul>
-      <div class="green-box">
-        All search activity happens through your own browser and your own IP address — exactly as if you searched manually. MailHarvest Pro does not operate any proxy, relay or data collection server.
+    <h2><span class="icon">👤</span> User Rights</h2>
+    <div class="rights-grid">
+      <div class="right-item">
+        <div class="right-title">🗑️ Right to Delete</div>
+        <div class="right-desc">Clear all stored data instantly at any time using the Clear button inside the extension. Uninstalling the extension removes all locally stored data completely.</div>
       </div>
-    </div>
-
-    <div class="card">
-      <h2>🤖 Bulk URL Automation</h2>
-      <p>The Bulk URL Automation feature opens URLs you provide in browser tabs and extracts email addresses from those pages.</p>
-      <ul>
-        <li>URL lists are entered by you and stored locally in your browser only</li>
-        <li>Pages are opened in your browser exactly as if you visited them manually</li>
-        <li>No URL lists or extracted data are transmitted to any external server</li>
-        <li>You can pause, resume or stop automation at any time</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>🔐 Permissions Explained</h2>
-      <p>MailHarvest Pro requests the following browser permissions. Each permission is used solely for its stated purpose and never for collecting third-party data:</p>
-      <div class="permission-row">
-        <span class="perm-name">storage</span>
-        <span>Saves extracted emails, settings, language preference, theme, session history, saved keywords and saved URLs locally on your device. No data is sent to any external server.</span>
+      <div class="right-item">
+        <div class="right-title">🔒 Right to Privacy</div>
+        <div class="right-desc">The extension does not share any information with third parties beyond what is explicitly described in this policy.</div>
       </div>
-      <div class="permission-row">
-        <span class="perm-name">activeTab</span>
-        <span>Reads the content of the page you are currently viewing to find and extract email addresses. Not used to collect browsing history or personal data.</span>
+      <div class="right-item">
+        <div class="right-title">📴 Right to Disable</div>
+        <div class="right-desc">You can disable or uninstall the extension at any time via your browser's extension management page.</div>
       </div>
-      <div class="permission-row">
-        <span class="perm-name">scripting</span>
-        <span>Runs the email extraction script on the active page when you trigger it. Not used to inject tracking or advertising code.</span>
+      <div class="right-item">
+        <div class="right-title">⚙️ Feature Control</div>
+        <div class="right-desc">CAPTCHA auto-solving and Google Sheets integration can each be independently enabled or disabled in the Settings tab at any time.</div>
       </div>
-      <div class="permission-row">
-        <span class="perm-name">tabs</span>
-        <span>Opens and manages background tabs for bulk URL automation and search automation features. Not used to monitor browsing activity or collect tab history.</span>
+      <div class="right-item">
+        <div class="right-title">🔑 License Portability</div>
+        <div class="right-desc">Your license key is yours. You can activate it on any supported browser at any time by entering it in the Settings tab.</div>
       </div>
-      <div class="permission-row">
-        <span class="perm-name">host permissions &lt;all_urls&gt;</span>
-        <span>Required so the content script can extract emails from any website the user chooses to scan. The script only activates when the user explicitly opens the extension — it never runs automatically, never collects data silently, and never transmits anything to external servers. This broad permission is essential because the extension must work on any website by design.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>👤 User Rights</h2>
-      <div class="highlight">
-        🗑️ <strong>Right to Delete</strong> — Clear all stored data instantly at any time using the Clear button inside the extension.<br><br>
-        🔒 <strong>Right to Privacy</strong> — The extension does not share any information with third parties under any circumstances.<br><br>
-        📴 <strong>Right to Disable</strong> — You can disable or uninstall the extension at any time, which removes all locally stored data.
+      <div class="right-item">
+        <div class="right-title">📬 Contact Us</div>
+        <div class="right-desc">For any privacy-related questions or requests, contact us at <a href="mailto:mailharvest@zohomail.com">mailharvest@zohomail.com</a> and we will respond promptly.</div>
       </div>
     </div>
 
-    <div class="card">
-      <h2>👁️ No Tracking Policy</h2>
-      <p>We do not use analytics, tracking pixels, cookies, fingerprinting, or any form of user monitoring. We have no visibility into how you use the extension, what websites you visit, or what emails you extract.</p>
-      <div class="green-box">
-        ✅ No ads. No analytics. No telemetry. No data collection. Ever.
-      </div>
-    </div>
+    <hr>
 
-    <div class="card">
-      <h2>📄 PDF Processing</h2>
-      <p>When extracting emails from PDF documents, all processing happens locally in your browser using an embedded PDF library (PDF.js by Mozilla). PDF contents are never uploaded or transmitted anywhere.</p>
+    <h2><span class="icon">👁️</span> No Tracking Policy</h2>
+    <div class="no-track">
+      <p>✅ No ads · No analytics · No telemetry · No tracking pixels · No cookies · No fingerprinting · No data collection · Ever.</p>
     </div>
+    <p>We have zero visibility into how you use the extension, what websites you visit, what searches you run or what emails you extract. We do not use any third-party analytics services (Google Analytics, Mixpanel, etc.) anywhere in the extension.</p>
 
-    <div class="card">
-      <h2>🔄 Changes to This Policy</h2>
-      <p>If we make material changes to this privacy policy, we will update the version history at the top of this page and update the "Last updated" date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
-    </div>
+    <hr>
 
-    <div class="card">
-      <h2>📬 Contact</h2>
-      <p>If you have any questions about this privacy policy or the extension, please contact us at:<br><br>
-      <a class="contact-link" href="mailto:eneugajames@gmail.com">eneugajames@gmail.com</a></p>
-    </div>
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the version history at the top of this page and update the "Last updated" date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
 
-    <div class="footer">
+    <hr>
+
+    <h2><span class="icon">📬</span> Contact</h2>
+    <p>If you have any questions about this privacy policy or the extension, please contact us at:</p>
+    <p><a href="mailto:mailharvest@zohomail.com">mailharvest@zohomail.com</a></p>
+
+    <footer>
       © 2026 MailHarvest Pro · All rights reserved<br>
-      <a class="contact-link" href="https://chapi212.github.io/mailharvest-pro">https://chapi212.github.io/mailharvest-pro</a>
-    </div>
+      <a href="https://chapi212.github.io/mailharvest-pro">chapi212.github.io/mailharvest-pro</a>
+    </footer>
 
   </div>
 </body>
