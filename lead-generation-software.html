@@ -866,6 +866,48 @@
     z-index: 10;
   }
   .highlight-strip a { color: #fff; text-decoration: underline; }
+
+  /* ── WHY CHOOSE ── */
+  .why-choose {
+    padding: 90px 0;
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+  .why-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px;
+    transition: border-color .2s, transform .2s;
+  }
+  .why-card:hover {
+    border-color: var(--border2);
+    transform: translateY(-3px);
+  }
+  .why-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .why-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  .why-card p {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.7;
+  }
+  @media(max-width:800px){ .why-grid { grid-template-columns: 1fr; } }
+
 </style>
 </head>
 <body>
@@ -1000,6 +1042,18 @@ const TRANSLATIONS = {
     footer_privacy: 'Privacy Policy', footer_terms: 'Terms of Use', footer_contact: 'Contact',
     footer_copy: '© 2026 MailHarvest Pro. All rights reserved.',
     footer_home: 'Back to Home',
+
+    why_label: 'Why MailHarvest Pro',
+    why_h2a: 'WHY BUSINESSES CHOOSE',
+    why_h2b: ' MAILHARVEST PRO',
+    why_h2c: ' FOR LEAD GENERATION',
+    why_sub: 'Building high-quality lead lists manually is time-consuming and often results in incomplete or outdated contact data. MailHarvest Pro automates the entire lead generation process by helping businesses discover, verify, enrich, and organize contacts from multiple sources.',
+    why1_h: 'Discover & Extract',
+    why1_p: 'Unlike traditional lead generation software that focuses only on finding email addresses, MailHarvest Pro combines lead discovery, email verification, contact enrichment, AI-powered scoring, website crawling, document extraction, and CRM-ready exports in a single platform.',
+    why2_h: 'Automate Research',
+    why2_p: 'Sales teams, agencies, recruiters, marketers, and business owners use MailHarvest Pro to build targeted prospect lists faster while reducing manual research work. The software can search multiple sources, extract contact information from websites and documents, verify email deliverability, enrich lead data, and export organized records directly to CSV or Google Sheets.',
+    why3_h: 'Streamline Outreach',
+    why3_p: 'Whether you're building a cold outreach campaign, researching decision makers, generating B2B leads, or creating prospect databases, MailHarvest Pro helps streamline the process and improve lead quality.',
   }
 };
 
@@ -1808,6 +1862,37 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="testi-role" data-t="t3_role">Lead Generation Agency</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BUSINESSES CHOOSE -->
+<section class="why-choose" id="whychoose">
+  <div class="container">
+    <div class="section-label" data-t="why_label">Why MailHarvest Pro</div>
+    <h2 class="section-heading display">
+      <span data-t="why_h2a">WHY BUSINESSES CHOOSE</span>
+      <em data-t="why_h2b"> MAILHARVEST PRO</em>
+      <span data-t="why_h2c"> FOR LEAD GENERATION</span>
+    </h2>
+    <p class="section-sub" data-t="why_sub">Building high-quality lead lists manually is time-consuming and often results in incomplete or outdated contact data. MailHarvest Pro automates the entire lead generation process by helping businesses discover, verify, enrich, and organize contacts from multiple sources.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-icon">🔍</span>
+        <h3 class="display" data-t="why1_h">Discover & Extract</h3>
+        <p data-t="why1_p">Unlike traditional lead generation software that focuses only on finding email addresses, MailHarvest Pro combines lead discovery, email verification, contact enrichment, AI-powered scoring, website crawling, document extraction, and CRM-ready exports in a single platform.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">⚡</span>
+        <h3 class="display" data-t="why2_h">Automate Research</h3>
+        <p data-t="why2_p">Sales teams, agencies, recruiters, marketers, and business owners use MailHarvest Pro to build targeted prospect lists faster while reducing manual research work. The software can search multiple sources, extract contact information from websites and documents, verify email deliverability, enrich lead data, and export organized records directly to CSV or Google Sheets.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">🎯</span>
+        <h3 class="display" data-t="why3_h">Streamline Outreach</h3>
+        <p data-t="why3_p">Whether you're building a cold outreach campaign, researching decision makers, generating B2B leads, or creating prospect databases, MailHarvest Pro helps streamline the process and improve lead quality.</p>
       </div>
     </div>
   </div>
